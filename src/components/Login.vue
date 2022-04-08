@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="grid">
     <ul>
       <li>
         <span>username</span>
@@ -17,7 +17,7 @@
 </template>
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Login',
   data () {
     return {
       dataServer: this.serverConfig.DataServer,
@@ -49,6 +49,5 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 </style>

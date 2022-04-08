@@ -1,0 +1,17 @@
+html {
+  font-family: "sans-serif";
+  font-size: "36px";
+  font-weight: "500";
+  color: "#000"; }
+
+ul {
+  list-style-type: none; }
+
+input {
+  list-style-type: none; }
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    display: grid; } }
+
+/*# sourceMappingURL=main.css.map */
