@@ -8,7 +8,7 @@ import axios from 'axios'
 import './assets/scss/main.css'
 
 Vue.config.productionTip = false
-Vue.prototype.serverConfig = serverConfig
+Vue.prototype.$serverConfig = serverConfig
 Vue.prototype.axios = axios
 /* eslint-disable no-new */
 new Vue({

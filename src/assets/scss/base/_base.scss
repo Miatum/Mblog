@@ -9,11 +9,13 @@ $mini-media-width: '768px'; // 平板
 $micro-media-width: '480px'; // 手机
 
 // global settings
-html {
+html, body{
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
   color: $color;
+  margin: 0 0;
+  padding: 0 0;
 }
 ul {
   list-style-type: none;

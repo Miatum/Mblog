@@ -1,5 +1,8 @@
 <template>
   <div class="grid">
+    <div>
+      <img :src="defaultPic">
+    </div>
     <ul>
       <li>
         <span>username</span>
@@ -20,7 +23,9 @@ export default {
   name: 'Login',
   data () {
     return {
-      dataServer: this.serverConfig.DataServer,
+      dataServer: this.$serverConfig.DataServer,
+      picServer: this.$serverConfig.PicServer,
+      defaultPic: this.$serverConfig.DefaultPic,
       username: '',
       password: ''
     }
@@ -30,6 +35,7 @@ export default {
   },
   methods: {
     logIn: function () {
+      // /api/blog/selectPublicBlogByTypeId'
       this.axios.get('/api/user/login', {
         params: {
           username: this.username,
