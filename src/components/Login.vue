@@ -3,7 +3,7 @@
     <div>
       <img :src="defaultPic">
     </div>
-    <ul>
+    <ul class="absolute rt">
       <li>
         <span>username</span>
         <input type="text" v-bind="username">
@@ -31,7 +31,15 @@ export default {
     }
   },
   mounted () {
-
+    var numbers = []
+    var i = 122
+    while (i > 0) {
+      numbers.push(i % 10)
+      i = (i - (i % 10)) / 10
+    }
+    var numSet = new Set(numbers)
+    console.log(numbers.length)
+    console.log(numSet.size)
   },
   methods: {
     logIn: function () {

@@ -15,5 +15,19 @@ input {
 @media screen and (min-width: 1200px) {
   .grid {
     display: grid; } }
+.absolute {
+  position: absolute; }
+  .absolute .lt {
+    left: 0;
+    top: 0; }
+  .absolute .rt {
+    right: 0;
+    top: 0; }
+  .absolute .lb {
+    left: 0;
+    buttom: 0; }
+  .absolute .rb {
+    right: 0;
+    buttom: 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+.absolute {
+  position: absolute;
+  .lt {
+    left: 0;
+    top: 0;
+  }
+  .rt {
+    right: 0;
+    top: 0;
+  }
+  .lb {
+    left: 0;
+    buttom: 0;
+  }
+  .rb {
+    right: 0;
+    buttom: 0;
+  }
+}
