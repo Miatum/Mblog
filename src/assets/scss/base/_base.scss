@@ -1,5 +1,5 @@
 // const
-$font-family: 'sans-serif';
+$font-family: 'Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace';
 $font-size: '36px';
 $font-weight: '500';
 $color: '#000';
@@ -19,4 +19,8 @@ html, body{
 }
 ul {
   list-style-type: none;
+}
+// 滚动条
+::-webkit-scrollbar {
+  display: none;
 }

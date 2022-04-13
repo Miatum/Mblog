@@ -1,0 +1,40 @@
+.login-frame {
+  width: 100vw;
+  height: 100vh;
+}
+.back-img {
+  // div标签直接包裹img或iframe等标签的时候，div不设置高度，子标签设置高度，此时div标签会被撑开，同时div的高度会比子标签多3px或4px，
+  // 这是由于子标签底部多了几个px的空白，由于子标签是行内元素，display属性值为inline，类似于文本，
+  // 需要把img或iframe标签设置为块级元素，即给img、iframe这些标签设置{display:block}，就不会出现几像素的空白。
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.login-box {
+  mix-blend-mode: difference;
+}
+@media screen and (min-width: $max-media-width){
+  .login-box {
+    width: 33.3vw;
+    height: 100%;
+    padding: 0 2.7vw;
+    @include absolute(null, 0 , 0, null);
+  }
+}
+@media screen and (min-width: $middle-media-width) and (max-width: $max-media-width){
+  .login-box {
+    width: 36.6vw;
+    height: 100%;
+    padding: 0 2.7vw;
+    @include absolute(null, 0 , 0, null);
+  }
+}
+@media screen and (max-width: $mini-media-width){
+  .login-box {
+    width: 40vw;
+    height: 100%;
+    padding: 0 2.7vw;
+    @include absolute(30vw, 0 , null, null);
+  }
+}

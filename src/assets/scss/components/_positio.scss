@@ -1,19 +1,38 @@
-.absolute {
+// absolute
+// 左上
+@mixin absolute($left, $top, $right, $buttom) {
   position: absolute;
-  .lt {
-    left: 0;
-    top: 0;
-  }
-  .rt {
-    right: 0;
-    top: 0;
-  }
-  .lb {
-    left: 0;
-    buttom: 0;
-  }
-  .rb {
-    right: 0;
-    buttom: 0;
-  }
+  left: $left;
+  top: $top;
+  right: $right;
+  buttom: $buttom;
 }
+.lt {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+// 右上
+.rt {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+// 左下
+.lb {
+  position: absolute;
+  left: 0;
+  buttom: 0;
+}
+// 右下
+.rb {
+  position: absolute;
+  right: 0;
+  buttom: 0;
+}
+
+// 子元素垂直居中
+.v-center{
+
+}
+

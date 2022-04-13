@@ -1,21 +1,23 @@
 <template>
-  <div class="grid">
-    <div>
-      <img :src="defaultPic">
+  <div>
+    <div class="login-frame">
+      <img :src="defaultPic" class="back-img">
     </div>
-    <ul class="absolute rt">
-      <li>
-        <span>username</span>
-        <input type="text" v-bind="username">
-      </li>
-      <li>
-        <span>password</span>
-        <input type="password" v-bind="password">
-      </li>
-      <li>
-        <input type="button" value="login" @click = "logIn">
-      </li>
-    </ul>
+    <div class="login-box">
+      <ul class="login-ul">
+        <li>
+          <span>username</span>
+          <input type="text" v-bind="username">
+        </li>
+        <li>
+          <span>password</span>
+          <input type="password" v-bind="password">
+        </li>
+        <li>
+          <input type="button" value="login" @click = "logIn">
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
@@ -31,15 +33,6 @@ export default {
     }
   },
   mounted () {
-    var numbers = []
-    var i = 122
-    while (i > 0) {
-      numbers.push(i % 10)
-      i = (i - (i % 10)) / 10
-    }
-    var numSet = new Set(numbers)
-    console.log(numbers.length)
-    console.log(numSet.size)
   },
   methods: {
     logIn: function () {

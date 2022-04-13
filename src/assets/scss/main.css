@@ -1,5 +1,5 @@
 html, body {
-  font-family: "sans-serif";
+  font-family: "Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace";
   font-size: "36px";
   font-weight: "500";
   color: "#000";
@@ -9,25 +9,79 @@ html, body {
 ul {
   list-style-type: none; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 input {
-  list-style-type: none; }
+  list-style-type: none;
+  background: none;
+  border: none;
+  outline: none; }
 
 @media screen and (min-width: 1200px) {
   .grid {
-    display: grid; } }
-.absolute {
-  position: absolute; }
-  .absolute .lt {
-    left: 0;
-    top: 0; }
-  .absolute .rt {
-    right: 0;
-    top: 0; }
-  .absolute .lb {
-    left: 0;
-    buttom: 0; }
-  .absolute .rb {
-    right: 0;
-    buttom: 0; }
+    display: grid; }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+.lt {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.rt {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.lb {
+  position: absolute;
+  left: 0;
+  buttom: 0; }
+
+.rb {
+  position: absolute;
+  right: 0;
+  buttom: 0; }
+
+.login-frame {
+  width: 100vw;
+  height: 100vh; }
+
+.back-img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; }
+
+.login-box {
+  mix-blend-mode: difference; }
+
+@media screen and (min-width: 1200px) {
+  .login-box {
+    width: 33.3vw;
+    height: 100%;
+    padding: 0 2.7vw;
+    position: absolute;
+    top: 0;
+    right: 0; } }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .login-box {
+    width: 36.6vw;
+    height: 100%;
+    padding: 0 2.7vw;
+    position: absolute;
+    top: 0;
+    right: 0; } }
+@media screen and (max-width: 768px) {
+  .login-box {
+    width: 40vw;
+    height: 100%;
+    padding: 0 2.7vw;
+    position: absolute;
+    left: 30vw;
+    top: 0; } }
 
 /*# sourceMappingURL=main.css.map */
