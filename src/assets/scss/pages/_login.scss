@@ -12,7 +12,7 @@
   object-fit: cover;
 }
 .login-box {
-  mix-blend-mode: difference;
+  //mix-blend-mode: exclusion;
 }
 @media screen and (min-width: $max-media-width){
   .login-box {
@@ -20,6 +20,9 @@
     height: 100%;
     padding: 0 2.7vw;
     @include absolute(null, 0 , 0, null);
+  }
+  .login-span {
+    
   }
 }
 @media screen and (min-width: $middle-media-width) and (max-width: $max-media-width){

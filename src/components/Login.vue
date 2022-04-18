@@ -7,14 +7,14 @@
       <ul class="login-ul">
         <li>
           <span>username</span>
-          <input type="text" v-bind="username">
+          <input type="text" v-bind="username" class="input-text">
         </li>
         <li>
           <span>password</span>
-          <input type="password" v-bind="password">
+          <input type="password" v-bind="password" class="input-password">
         </li>
         <li>
-          <input type="button" value="login" @click = "logIn">
+          <input type="button" value="login" @click = "logIn" class="input-button">
         </li>
       </ul>
     </div>

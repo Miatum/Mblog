@@ -1,5 +1,5 @@
 // absolute
-// 左上
+// 传参
 @mixin absolute($left, $top, $right, $buttom) {
   position: absolute;
   left: $left;
@@ -7,6 +7,7 @@
   right: $right;
   buttom: $buttom;
 }
+// 左上
 .lt {
   position: absolute;
   left: 0;

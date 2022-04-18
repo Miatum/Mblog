@@ -18,6 +18,26 @@ input {
   border: none;
   outline: none; }
 
+.input-text {
+  height: 1.5rem;
+  border: 2px solid coral;
+  border-radius: 0.2rem;
+  background: #ffffff; }
+
+.input-password {
+  height: 1.5rem;
+  border: 2px solid coral;
+  border-radius: 0.2rem;
+  background: #ffffff; }
+
+.input-button {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 2rem;
+  border: 1px solid coral;
+  border-radius: 0.2rem; }
+
 @media screen and (min-width: 1200px) {
   .grid {
     display: grid; }
@@ -55,9 +75,6 @@ input {
   width: 100vw;
   height: 100vh;
   object-fit: cover; }
-
-.login-box {
-  mix-blend-mode: difference; }
 
 @media screen and (min-width: 1200px) {
   .login-box {
