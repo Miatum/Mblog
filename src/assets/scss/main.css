@@ -76,6 +76,9 @@ input {
   height: 100vh;
   object-fit: cover; }
 
+.login-box {
+  mix-blend-mode: saturation; }
+
 @media screen and (min-width: 1200px) {
   .login-box {
     width: 33.3vw;
