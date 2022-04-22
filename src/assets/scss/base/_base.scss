@@ -1,12 +1,12 @@
 // const
-$font-family: 'Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace';
-$font-size: '36px';
-$font-weight: '500';
-$color: '#000';
-$max-media-width: '1200px'; // 大型台式
-$middle-media-width: '992px'; // 台式
-$mini-media-width: '768px'; // 平板
-$micro-media-width: '480px'; // 手机
+$font-family: Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
+$font-size: 16px;
+$font-weight: 300;
+$color: #fff;
+$max-media-width: 1200px; // 大型台式
+$middle-media-width: 992px; // 台式
+$mini-media-width: 768px; // 平板
+$micro-media-width: 480px; // 手机
 
 // global settings
 html, body{
@@ -19,6 +19,8 @@ html, body{
 }
 ul {
   list-style-type: none;
+  // 去除默认内边距
+  padding: 0;
 }
 // 滚动条
 ::-webkit-scrollbar {

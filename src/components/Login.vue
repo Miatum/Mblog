@@ -5,18 +5,14 @@
     </div>
     <div class="login-box">
       <ul class="login-ul">
-        <li>
-          <span>username</span>
-          <input type="text" v-bind="username" class="input-text">
+        <li class="login-li">
+          <input type="text" v-bind="username" placeholder="用户名" class="login-input input-text">
         </li>
-        <li>
-          <span>password</span>
-          <input type="password" v-bind="password" class="input-password">
-        </li>
-        <li>
-          <input type="button" value="login" @click = "logIn" class="input-button">
+        <li class="login-li">
+          <input type="password" v-bind="password" placeholder="密码" class="login-input input-password">
         </li>
       </ul>
+      <input type="button" value="登录" @click = "logIn" class="login-input input-button">
     </div>
   </div>
 </template>

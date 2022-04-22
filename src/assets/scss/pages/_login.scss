@@ -11,18 +11,12 @@
   height: 100vh;
   object-fit: cover;
 }
-.login-box {
-  mix-blend-mode: saturation;
-}
 @media screen and (min-width: $max-media-width){
   .login-box {
     width: 33.3vw;
     height: 100%;
     padding: 0 2.7vw;
     @include absolute(null, 0 , 0, null);
-  }
-  .login-span {
-    
   }
 }
 @media screen and (min-width: $middle-media-width) and (max-width: $max-media-width){
@@ -35,9 +29,22 @@
 }
 @media screen and (max-width: $mini-media-width){
   .login-box {
-    width: 40vw;
-    height: 100%;
-    padding: 0 2.7vw;
-    @include absolute(30vw, 0 , null, null);
+    width: 70vw;
+    height: 20%;
+    @include absolute(15vw, null, null, 20%);
+    background: rgba(11,11,11,0.4);
+  }
+  .login-ul {
+
+  }
+  .login-li {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0.5rem 0;
+  }
+  .login-input {
+    color: $color;
+    font-size: $font-size;
   }
 }

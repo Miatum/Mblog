@@ -1,11 +1,11 @@
 // absolute
 // 传参
-@mixin absolute($left, $top, $right, $buttom) {
+@mixin absolute($left, $top, $right, $bottom) {
   position: absolute;
   left: $left;
   top: $top;
   right: $right;
-  buttom: $buttom;
+  bottom: $bottom;
 }
 // 左上
 .lt {
@@ -23,13 +23,13 @@
 .lb {
   position: absolute;
   left: 0;
-  buttom: 0;
+  bottom: 0;
 }
 // 右下
 .rb {
   position: absolute;
   right: 0;
-  buttom: 0;
+  bottom: 0;
 }
 
 // 子元素垂直居中
