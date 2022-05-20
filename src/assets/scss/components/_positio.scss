@@ -7,33 +7,38 @@
   right: $right;
   bottom: $bottom;
 }
+// 上
+.top {
+  position: absolute;
+  top: 0;
+}
+// 下
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
 // 左上
-.lt {
+.left_top {
   position: absolute;
   left: 0;
   top: 0;
 }
 // 右上
-.rt {
+.right_top {
   position: absolute;
   right: 0;
   top: 0;
 }
 // 左下
-.lb {
+.left_bottom {
   position: absolute;
   left: 0;
   bottom: 0;
 }
 // 右下
-.rb {
+.right_botoom {
   position: absolute;
   right: 0;
   bottom: 0;
-}
-
-// 子元素垂直居中
-.v-center{
-
 }
 

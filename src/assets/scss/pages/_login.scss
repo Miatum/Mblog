@@ -12,39 +12,38 @@
   object-fit: cover;
 }
 @media screen and (min-width: $max-media-width){
-  .login-box {
-    width: 33.3vw;
-    height: 100%;
-    padding: 0 2.7vw;
-    @include absolute(null, 0 , 0, null);
-  }
 }
 @media screen and (min-width: $middle-media-width) and (max-width: $max-media-width){
-  .login-box {
-    width: 36.6vw;
-    height: 100%;
-    padding: 0 2.7vw;
-    @include absolute(null, 0 , 0, null);
-  }
 }
 @media screen and (max-width: $mini-media-width){
+  .mask {
+    @include absolute(0, 0, 0, 0);
+    background: rgba(1, 1, 1, 0.4);
+    z-index: 1000;
+    // 遮罩层挡住按钮
+    pointer-events: none;
+  }
+  .darker {
+    opacity: 0.5;
+  }
   .login-box {
-    width: 70vw;
-    height: 20%;
-    @include absolute(15vw, null, null, 20%);
-    background: rgba(11,11,11,0.4);
+    @include absolute(0, 0, 0, 0);
+    @extend .flex;
+    flex-direction: column;
   }
-  .login-ul {
-
+  .avatar {
+    background-image: url($root-avatar);
+    background-size: 100%;
+    object-fit: cover;
+    border: 1px solid #ffffff;
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50%;
   }
-  .login-li {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    margin: 0.5rem 0;
+  .occupation {
+    width: 100vw;
+    height: 5vh;
   }
-  .login-input {
-    color: $color;
-    font-size: $font-size;
+  .PIN {
   }
 }

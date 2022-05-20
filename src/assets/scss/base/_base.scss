@@ -2,12 +2,12 @@
 $font-family: Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
 $font-size: 16px;
 $font-weight: 300;
-$color: #fff;
+$color: #000000;
 $max-media-width: 1200px; // 大型台式
 $middle-media-width: 992px; // 台式
 $mini-media-width: 768px; // 平板
 $micro-media-width: 480px; // 手机
-
+$root-avatar: "http://39.107.84.16:9001/avatar.png";
 // global settings
 html, body{
   font-family: $font-family;
@@ -24,5 +24,12 @@ ul {
 }
 // 滚动条
 ::-webkit-scrollbar {
+  display: none;
+}
+// 是否可见
+.show {
+  display: initial;
+}
+.hide {
   display: none;
 }

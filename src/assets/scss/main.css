@@ -1,8 +1,10 @@
+@import url(vendors/animate.css);
+@import url(vendors/weui.css);
 html, body {
   font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
   font-size: 16px;
   font-weight: 300;
-  color: #fff;
+  color: #000000;
   margin: 0 0;
   padding: 0 0; }
 
@@ -12,6 +14,19 @@ ul {
 
 ::-webkit-scrollbar {
   display: none; }
+
+.show {
+  display: initial; }
+
+.hide {
+  display: none; }
+
+.circle-dashed-button {
+  width: 40vw;
+  height: 40vw;
+  border: 1px dashed #ffffff;
+  border-radius: 50%;
+  color: #ffffff; }
 
 input {
   list-style-type: none;
@@ -37,30 +52,35 @@ input {
   min-width: 7rem;
   border-radius: 0.2rem; }
 
-@media screen and (min-width: 1200px) {
-  .grid {
-    display: grid; }
-
-  .flex {
+@media screen and (max-width: 768px) {
+  .flex, .login-box {
     display: flex;
     align-items: center;
     justify-content: center; } }
-.lt {
+.top {
+  position: absolute;
+  top: 0; }
+
+.bottom {
+  position: absolute;
+  bottom: 0; }
+
+.left_top {
   position: absolute;
   left: 0;
   top: 0; }
 
-.rt {
+.right_top {
   position: absolute;
   right: 0;
   top: 0; }
 
-.lb {
+.left_bottom {
   position: absolute;
   left: 0;
   bottom: 0; }
 
-.rb {
+.right_botoom {
   position: absolute;
   right: 0;
   bottom: 0; }
@@ -75,39 +95,46 @@ input {
   height: 100vh;
   object-fit: cover; }
 
-@media screen and (min-width: 1200px) {
-  .login-box {
-    width: 33.3vw;
-    height: 100%;
-    padding: 0 2.7vw;
-    position: absolute;
-    top: 0;
-    right: 0; } }
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .login-box {
-    width: 36.6vw;
-    height: 100%;
-    padding: 0 2.7vw;
-    position: absolute;
-    top: 0;
-    right: 0; } }
 @media screen and (max-width: 768px) {
-  .login-box {
-    width: 70vw;
-    height: 20%;
+  .mask {
     position: absolute;
-    left: 15vw;
-    bottom: 20%;
-    background: rgba(11, 11, 11, 0.4); }
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(1, 1, 1, 0.4);
+    z-index: 1000;
+    pointer-events: none; }
 
-  .login-li {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    margin: 0.5rem 0; }
+  .darker {
+    opacity: 0.5; }
 
-  .login-input {
-    color: #fff;
-    font-size: 16px; } }
+  .login-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column; }
+
+  .avatar {
+    background-image: url("http://39.107.84.16:9001/avatar.png");
+    background-size: 100%;
+    object-fit: cover;
+    border: 1px solid #ffffff;
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50%; }
+
+  .occupation {
+    width: 100vw;
+    height: 5vh; } }
+.top_bar {
+  width: 100vw;
+  height: 5vh; }
+
+.bottom_bar {
+  width: 100vw;
+  height: 10vh; }
 
 /*# sourceMappingURL=main.css.map */
