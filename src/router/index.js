@@ -2,9 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@/components/Login'
 import Homepage from '@/components/HomePage'
-import BlogGrid from '@/components/blog/BlogGrid'
-import Category from '@/components/blog/Category'
-import Tag from '@/components/blog/Tag'
+import Blog from '@/components/Blog'
+import Bill from '@/components/Bill'
+import Calendar from '@/components/Calendar'
+import Setting from '@/components/Setting'
 Vue.use(Router)
 
 export default new Router({
@@ -16,15 +17,19 @@ export default new Router({
       children: [
         {
           path: '/',
-          component: BlogGrid
+          component: Blog
         },
         {
-          path: '/Category',
-          component: Category
+          path: '/Bill',
+          component: Bill
         },
         {
-          path: '/Tag',
-          component: Tag
+          path: '/Calendar',
+          component: Calendar
+        },
+        {
+          path: '/setting',
+          component: Setting
         }
       ]
     }

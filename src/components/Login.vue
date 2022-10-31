@@ -5,7 +5,9 @@
       <img :src="defaultPic" class="back-img" alt="Miatum">
     </div>
     <div class="login-box">
-      <div v-bind:class="[entranced ? 'avatar animate__animated animate__zoomIn' : 'circle-dashed-button flex animate__animated animate__zoomIn']" v-on:click="entrance">
+      <div
+        v-bind:class="[entranced ? 'avatar animate__animated animate__zoomIn' : 'circle-dashed-button flex animate__animated animate__zoomIn']"
+        v-on:click="entrance">
         <span v-bind:class="[entranced ? 'hide' : 'show animate__animated animate__zoomIn']">ENTRANCE</span>
       </div>
       <div class="occupation"></div>
@@ -18,7 +20,7 @@
 <script>
 export default {
   name: 'Login',
-  data () {
+  data() {
     return {
       dataServer: this.$serverConfig.DataServer,
       defaultPic: this.$serverConfig.DefaultPic,
@@ -26,7 +28,7 @@ export default {
       entranced: false
     }
   },
-  mounted () {
+  mounted() {
 
   },
   methods: {
@@ -36,7 +38,7 @@ export default {
     },
     rootLogin: function () {
       this.axios.post(this.dataServer + '/api/user/rootLogin', {
-        PIN:this.PIN
+        PIN: this.PIN
       }).then(response => {
         console.log(response.data)
         if (response.data.code == 200) {
@@ -46,7 +48,7 @@ export default {
           console.log('登录失败')
           this.PIN = ''
         }
-      }).catch(error =>{
+      }).catch(error => {
         console.log(error)
       })
     }
@@ -54,7 +56,7 @@ export default {
   watch: {
     avatarTransition: function () {
       function animate() {
-        
+
       }
     }
   }
