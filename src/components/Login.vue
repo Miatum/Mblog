@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     // 点击entrance按钮
-    entrance: function() {
+    entrance: function () {
       this.entranced = true
     },
     rootLogin: function () {

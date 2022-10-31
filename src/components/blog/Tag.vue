@@ -3,37 +3,36 @@
     <div class="top_bar">
       <router-link to="/">
       </router-link>
-      <a>分类</a>
+      <a>标签</a>
       <a>
       </a>
     </div>
     <div class="weui-cells">
-      <div class="weui-cell" v-for="category in categorys">
+      <div class="weui-cell" v-for="tag in tags">
         <div class="weui-cell__bd">
-          <p>{{category.id}}</p>
+          <p>{{tag.id}}</p>
         </div>
-        <div class="weui-cell__ft">{{category.type_name}}</div>
+        <div class="weui-cell__ft">{{tag.tag_name}}</div>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
   export default {
-    name: "Category",
+    name: "Tag",
     data () {
       return {
         dataServer: this.$serverConfig.DataServer,
-        categorys: ''
+        tags: ''
       }
     },
     mounted() {
-      // 获取所有分类
-      this.axios.get(this.dataServer + '/api/type/selctAllType'
+      // 获取所有标签
+      this.axios.get(this.dataServer + '/api/tag/selctAllTag'
       ).then(response => {
         console.log(response.data)
-        this.categorys = response.data
+        this.tags = response.data
       }).catch(error => {
         console.log(error)
       })

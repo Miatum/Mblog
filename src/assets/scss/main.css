@@ -134,6 +134,8 @@ input {
   height: 5vh; }
 
 .bottom_bar {
+  position: fixed;
+  bottom: 0;
   width: 100vw;
   height: 10vh; }
 
