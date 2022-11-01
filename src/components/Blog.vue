@@ -18,7 +18,7 @@
           </label>
         </form>
         <a role="button" class="weui-search-bar__cancel-btn" id="searchCancel" wah-hotarea="click"
-          v-on:clikc="cancelSearch">取消</a>
+          v-on:click="cancelSearch">取消</a>
       </div>
     </div>
     <div>
@@ -39,10 +39,8 @@ export default {
     }
   },
   mounted() {
-    console.log('check')
     this.axios.get(this.dataServer + '/api/blog/selectAllBlog').then(response => {
       this.blogs = response.data
-      console.log(this.blogs)  // 
     }).catch(error => {
       console.log(error)
     })
@@ -53,7 +51,6 @@ export default {
     },
     cancelSearch: function () {
       this.isSearch = false
-      console.log("check cancel")
     }
   }
 }

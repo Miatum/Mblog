@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import serverConfig from './assets/js/config'
 import axios from 'axios'
-import './assets/scss/main.css'
+import './assets/css/main.css'
 
 Vue.config.productionTip = false
 Vue.prototype.$serverConfig = serverConfig
