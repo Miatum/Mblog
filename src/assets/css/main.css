@@ -1,2 +1,4 @@
 @import "./vendors/animate.css";
 @import "./vendors/weui.css";
+@import "./pages/homePage.css";
+@import "./pages/blog.css"

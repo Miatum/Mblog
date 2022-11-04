@@ -1,0 +1,6 @@
+.main_frame {
+    width: 80vw; 
+}
+.blog_img {
+    object-fit: cover;
+}

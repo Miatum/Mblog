@@ -22,8 +22,11 @@
       </div>
     </div>
     <div>
-      
+      <div v-for="blog in blogs">
+        <img :src="blog.cover" class="blog_img">
+      </div>
     </div>
+    
   </div>
 </template>
 
@@ -56,6 +59,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style src="./../assets/css/pages/blog.css" scoped>
 
 </style>
